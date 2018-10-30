@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_height_large">80dp</dimen>
+    <dimen name="item_height_normal">60dp</dimen>
+    <dimen name="item_height_small">45dp</dimen>
+
+    <dimen name="font_large">35sp</dimen>
+    <dimen name="font_normal">25sp</dimen>
+    <dimen name="font_small">15sp</dimen>
+</resources>

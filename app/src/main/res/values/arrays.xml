@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--扩展列表主项-->
+    <string-array name="expandable_group">
+        <item>UI控件</item>
+        <item>屏幕相关</item>
+        <item>工具类测试</item>
+    </string-array>
+
+    <!--扩展列表ui子项-->
+    <string-array name="expandable_child_ui">
+        <item>按钮样式</item>
+    </string-array>
+
+    <!--扩展列表屏幕相关类子项-->
+    <string-array name="expandable_child_screen">
+        <item>获取系统分辨率</item>
+    </string-array>
+
+    <!--扩展列表工具类子项-->
+    <string-array name="expandable_child_tool">
+        <item>根据字符串获取每位值</item>
+    </string-array>
+
+</resources>
