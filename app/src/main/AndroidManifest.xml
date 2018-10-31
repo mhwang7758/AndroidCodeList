@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name="com.mhwang.dialog.ButtonsDialog"
+            android:theme="@android:style/Theme.Dialog"/>
+
+        <activity android:name="com.mhwang.dialog.ScreenDialog"
+                  android:theme="@android:style/Theme.Dialog"/>
     </application>
 
 </manifest>

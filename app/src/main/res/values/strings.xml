@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DemoList</string>
+
+    <string name="circle_button">圆角按钮</string>
+    <string name="circle_button_selector">圆角按钮带点击效果</string>
+    <string name="border_button">直角按钮</string>
 </resources>

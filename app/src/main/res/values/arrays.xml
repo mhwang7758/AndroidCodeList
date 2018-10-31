@@ -15,6 +15,7 @@
     <!--扩展列表屏幕相关类子项-->
     <string-array name="expandable_child_screen">
         <item>获取系统分辨率</item>
+        <item>屏幕方向</item>
     </string-array>
 
     <!--扩展列表工具类子项-->

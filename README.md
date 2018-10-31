@@ -4,6 +4,13 @@
 # 更新日志
 
 # 2018/10/29 
-1、创建Demo演示工程及列表
+1、 创建Demo演示工程及列表
 <br/>
 ![demo ui](https://52code.tech/images/block/ic_demo_ui.gif)
+
+# 2018/10/31
+1、 添加圆形按钮样式、圆形按钮点击效果样式、方形按钮样式
+<br/>
+2、 添加获取屏幕宽高、判断屏幕方向
+<br/>
+![screenparam](https://52code.tech/images/block/ic_button_screen.gif)
