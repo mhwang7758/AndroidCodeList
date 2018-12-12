@@ -4,4 +4,10 @@
     <string name="circle_button">圆角按钮</string>
     <string name="circle_button_selector">圆角按钮带点击效果</string>
     <string name="border_button">直角按钮</string>
+
+    <string name="sure">确定</string>
+    <string name="title_each_byte">获取16进制每位值</string>
+
+
+    <string name="hint_each_byte">请输入要转换的16进制字符</string>
 </resources>

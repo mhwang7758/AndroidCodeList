@@ -14,3 +14,6 @@
 2、 添加获取屏幕宽高、判断屏幕方向
 <br/>
 ![screenparam](https://52code.tech/images/block/ic_button_screen.gif)
+
+# 2018/12/12
+1、 添加获取每位值

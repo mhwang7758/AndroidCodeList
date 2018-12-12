@@ -27,6 +27,6 @@
         android:background="@drawable/border_button"
         android:layout_gravity="center"
         android:textSize="@dimen/font_normal"
-        android:text="@string/circle_button"
+        android:text="@string/border_button"
         android:layout_height="wrap_content"/>
 </LinearLayout>

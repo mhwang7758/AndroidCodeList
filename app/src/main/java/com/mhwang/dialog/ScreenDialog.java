@@ -20,9 +20,9 @@ import butterknife.ButterKnife;
  */
 public class ScreenDialog extends Activity {
 
-    public static final String OPTION_TYPE = "type";
-    public static final int GET_WIDTH_HEIGHT = 0;             // 操作类型的下标，与array里的expandable_child_screen对应
-    public static final int IS_LAND = 1;
+    public static final String KEY_OPTION_TYPE = "type";
+    public static final int GET_WIDTH_HEIGHT = 100;             // 操作类型的下标，与array里的expandable_child_screen对应
+    public static final int IS_LAND = 101;
 
     @BindView(R.id.tv_screenParam)
     TextView tv_screenParam;
@@ -32,7 +32,7 @@ public class ScreenDialog extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.dialog_screen);
         ButterKnife.bind(this);
-        int type = getIntent().getIntExtra(OPTION_TYPE, -1);
+        int type = getIntent().getIntExtra(KEY_OPTION_TYPE, -1);
         showParam(type);
     }
 

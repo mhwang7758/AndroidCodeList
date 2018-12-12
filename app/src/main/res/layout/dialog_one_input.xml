@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/normal_dialog"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/black"
+        android:text="标题"
+        android:layout_gravity="center"
+        android:id="@+id/tv_title"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:minWidth="@dimen/edit_min_width"
+        android:paddingLeft="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_height="@dimen/item_height_normal"
+        android:hint="请输入……"
+        android:id="@+id/et_input"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:textSize="@dimen/font_normal"
+        android:gravity="center"
+        android:text="结果"
+        android:layout_gravity="center"
+        android:id="@+id/tv_result"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/sure"
+        android:id="@+id/btn_sure"
+        android:textSize="@dimen/font_normal"
+        android:background="@drawable/circle_button_selector"/>
+</LinearLayout>

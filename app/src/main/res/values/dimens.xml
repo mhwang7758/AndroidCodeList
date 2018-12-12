@@ -20,4 +20,6 @@
 
     <dimen name="dialog_height">500dp</dimen>
     <dimen name="dialog_width">600dp</dimen>
+
+    <dimen name="edit_min_width">400dp</dimen>
 </resources>
