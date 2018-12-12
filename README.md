@@ -17,3 +17,5 @@
 
 # 2018/12/12
 1、 添加获取每位值
+<br/>
+![screenparam](https://52code.tech/images/block/gif_each_byte.gif)
