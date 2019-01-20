@@ -26,6 +26,8 @@ public class MainActivity extends Activity {
 
     private ExpandableAdapter mAdapter;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
