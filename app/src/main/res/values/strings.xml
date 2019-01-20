@@ -8,8 +8,12 @@
     <string name="sure">确定</string>
     <string name="title_each_byte">获取16进制每位值</string>
     <string name="title_int_bytes">获取10进制数字byte数组</string>
+    <string name="title_decimal_format">格式化2位小数</string>
+    <string name="title_is_number">判断字符串是否数字</string>
 
 
     <string name="hint_each_byte">请输入要转换的16进制字符</string>
     <string name="hint_int_value">请输入要获取的数字</string>
+    <string name="hint_decimal">请输入小数</string>
+    <string name="hint_is_number">请输入要判断的字符串</string>
 </resources>

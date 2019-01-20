@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.text.InputType;
 import android.text.TextUtils;
 import android.view.Window;
 import android.widget.EditText;
@@ -12,6 +11,7 @@ import android.widget.TextView;
 
 import com.mhwang.demolist.R;
 import com.mhwang.utils.BytesUtil;
+import com.mhwang.utils.NumberFormat;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -28,6 +28,7 @@ public class OneInputDialog extends Activity {
     public static final String KEY_OPERATION_TYPE = "type";
     public static final String KEY_EDIT_INPUT_TYPE = "inputType";
 
+    public static final int DEFAULT_INPUT_TYPE = -1;
 
     /**
      *  获取16进制字符串每位值
@@ -38,6 +39,20 @@ public class OneInputDialog extends Activity {
      */
     public static final int OPERATION_GET_INT_BYTES_HL = 201;
     public static final int OPERATION_GET_INT_BYTES_LH = 202;
+    /**
+     *  crc16校验和异或校验
+     */
+    public static final int OPERATION_CRC16 = 203;
+    public static final int OPERATION_XOR = 204;
+
+    /**
+     *  格式化小数
+     */
+    public static final int OPERATION_DECIMAL_FORMAT = 205;
+    /**
+     *  判断字符串是否数字
+     */
+    public static final int OPERATION_IS_NUMBER = 206;
 
     @BindView(R.id.tv_title)
     TextView tv_title;
@@ -66,8 +81,8 @@ public class OneInputDialog extends Activity {
             et_input.setHint(hint);
         }
 
-        int inputType = getIntent().getIntExtra(KEY_EDIT_INPUT_TYPE, -1);
-        if (inputType != -1){
+        int inputType = getIntent().getIntExtra(KEY_EDIT_INPUT_TYPE, DEFAULT_INPUT_TYPE);
+        if (inputType != DEFAULT_INPUT_TYPE){
             et_input.setInputType(inputType);
         }
 
@@ -84,7 +99,38 @@ public class OneInputDialog extends Activity {
             case OPERATION_GET_INT_BYTES_LH:
                 showGetIntBytesResult();
                 break;
+            case OPERATION_DECIMAL_FORMAT:
+                showDecimalFormatResult();
+                break;
+            case OPERATION_IS_NUMBER:
+                showIsNumberResult();
+                break;
         }
+    }
+
+    /**
+     *  显示判断字符串数字结果
+     */
+    private void showIsNumberResult() {
+        String input = et_input.getText().toString().trim();
+        if (TextUtils.isEmpty(input)){
+            return;
+        }
+
+        boolean numeric = NumberFormat.isNumber(input);
+        tv_result.setText(numeric? "该字符串为数字" : "该字符串不是数字");
+    }
+
+    /**
+     *  显示格式化小数结果
+     */
+    private void showDecimalFormatResult() {
+        String input = et_input.getText().toString().trim();
+        if (TextUtils.isEmpty(input)){
+            return;
+        }
+        String result = NumberFormat.getPriceFormat(Double.parseDouble(input));
+        tv_result.setText(result);
     }
 
     /**

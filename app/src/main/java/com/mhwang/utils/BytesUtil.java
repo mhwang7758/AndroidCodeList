@@ -27,7 +27,7 @@ public class BytesUtil {
      * @param src 需要转换的16进制
      * @return byte数组
      */
-    public static byte[] HexString2Bytes(String src) {
+    public static byte[] hexString2Bytes(String src) {
         int len = src.length() / 2;
         byte[] ret = new byte[len];
         byte[] tmp = src.getBytes();

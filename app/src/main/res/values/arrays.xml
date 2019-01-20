@@ -23,6 +23,10 @@
         <item>根据字符串获取每位值</item>
         <item>10进制数字转byte数组(高位在前，低位在后)</item>
         <item>10进制数字转byte数组(低位在前，高位在后)</item>
+        <item>CRC16校验(未演示)</item>
+        <item>异或校验(未演示)</item>
+        <item>格式化2位小数(非四舍五入)</item>
+        <item>判断字符串是否数字</item>
     </string-array>
 
 </resources>
