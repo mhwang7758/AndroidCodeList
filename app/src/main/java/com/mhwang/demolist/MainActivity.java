@@ -3,6 +3,7 @@ package com.mhwang.demolist;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.view.Window;
 import android.widget.ExpandableListView;
@@ -62,15 +63,30 @@ public class MainActivity extends Activity {
         // 为防止对话框里面识别错乱，规定在每个组的顺序*100再加下标
         position = 200 + position;
         Intent intent = null;
+        String title;
+        String hint;
         switch (position){
             case 200:
                 intent = new Intent(this, OneInputDialog.class);
-                String title = getString(R.string.title_each_byte);
+                title = getString(R.string.title_each_byte);
                 intent.putExtra(OneInputDialog.KEY_TITLE, title);
-                String hint = getString(R.string.hint_each_byte);
+                hint = getString(R.string.hint_each_byte);
                 intent.putExtra(OneInputDialog.KEY_EDIT_HINT, hint);
-                intent.putExtra(OneInputDialog.KEY_OPERATION_TYPE, position);
+                intent.putExtra(OneInputDialog.KEY_OPERATION_TYPE, OneInputDialog.OPERATION_GET_EACH_BYTE);
                 break;
+            case 201:
+            case 202:
+                intent = new Intent(this, OneInputDialog.class);
+                title = getString(R.string.title_int_bytes);
+                intent.putExtra(OneInputDialog.KEY_TITLE, title);
+                hint = getString(R.string.hint_int_value);
+                intent.putExtra(OneInputDialog.KEY_EDIT_HINT, hint);
+                intent.putExtra(OneInputDialog.KEY_EDIT_INPUT_TYPE, InputType.TYPE_CLASS_NUMBER);
+                if (position == 201) {
+                    intent.putExtra(OneInputDialog.KEY_OPERATION_TYPE, OneInputDialog.OPERATION_GET_INT_BYTES_HL);
+                }else{
+                    intent.putExtra(OneInputDialog.KEY_OPERATION_TYPE, OneInputDialog.OPERATION_GET_INT_BYTES_LH);
+                }
         }
 
         if (intent != null){
@@ -91,13 +107,14 @@ public class MainActivity extends Activity {
         if (intent != null){
             startActivity(intent);
         }
+
     }
 
     /** 显示屏幕相关参数对话框
      * @param position 点击的按钮下标
      */
     private void showScreenParamDialog(int position){
-        // 为防止对话框里面识别错乱，规定在每个组的顺序*100再加下标
+        // 由于多个功能可能重用一个对话框，为防止对话框里面识别错乱，规定在每个组的顺序*100再加下标
         position = 100 + position;
         Intent intent = new Intent(this, ScreenDialog.class);
         intent.putExtra(ScreenDialog.KEY_OPTION_TYPE, position);

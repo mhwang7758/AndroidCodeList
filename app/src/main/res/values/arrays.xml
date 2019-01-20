@@ -21,6 +21,8 @@
     <!--扩展列表工具类子项-->
     <string-array name="expandable_child_tool">
         <item>根据字符串获取每位值</item>
+        <item>10进制数字转byte数组(高位在前，低位在后)</item>
+        <item>10进制数字转byte数组(低位在前，高位在后)</item>
     </string-array>
 
 </resources>
