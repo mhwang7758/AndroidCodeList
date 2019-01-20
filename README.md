@@ -24,3 +24,7 @@
 1、 添加获取整形数字对应的byte数组(分高低位)
 <br/>
 ![获取整形数字byte数组](https://52code.tech/images/block/int_to_bytes.gif)
+
+2、 添加格式化小数及判断字符串是否数字
+<br/>
+![格式化小数](https://52code.tech/images/block/number_format.gif)
