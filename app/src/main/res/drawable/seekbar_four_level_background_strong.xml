@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@drawable/shape_seekbar_background"
+        android:top="3dp" android:bottom="3dp"/>
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <layer-list>
+                <item android:drawable="@drawable/shape_progress_first_level"
+                      android:top="3dp"
+                      android:bottom="3dp"/>
+                <item android:drawable="@drawable/shape_progress_second_level"
+                      android:left="50dp"
+                      android:top="2dp"
+                      android:bottom="2dp"/>
+                <item android:drawable="@drawable/shape_progress_three_level"
+                      android:left="100dp"
+                      android:top="1dp"
+                      android:bottom="1dp"/>
+                <item android:drawable="@drawable/shape_progress_four_level"
+                      android:left="150dp"/>
+            </layer-list>
+        </clip>
+    </item>
+</layer-list>

@@ -25,6 +25,9 @@
 
         <activity android:name="com.mhwang.dialog.OneInputDialog"
                   android:theme="@android:style/Theme.Dialog"/>
+
+        <activity android:name="com.mhwang.dialog.SeekbarsDialog"
+                  android:theme="@android:style/Theme.Dialog"/>
     </application>
 
 </manifest>

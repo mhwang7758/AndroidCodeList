@@ -10,6 +10,7 @@
     <!--扩展列表ui子项-->
     <string-array name="expandable_child_ui">
         <item>按钮样式</item>
+        <item>进度条样式</item>
     </string-array>
 
     <!--扩展列表屏幕相关类子项-->

@@ -18,4 +18,10 @@
         <item name="android:paddingRight">@dimen/margin_large</item>
     </style>
 
+    <style name="seekbar" parent="@android:style/Widget.Material.SeekBar.Discrete">
+        <item name="android:minHeight">20dp</item>
+        <item name="android:minWidth">20dp</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+    </style>
+
 </resources>

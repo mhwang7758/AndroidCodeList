@@ -12,6 +12,7 @@ import com.mhwang.adapter.ExpandableAdapter;
 import com.mhwang.dialog.ButtonsDialog;
 import com.mhwang.dialog.OneInputDialog;
 import com.mhwang.dialog.ScreenDialog;
+import com.mhwang.dialog.SeekbarsDialog;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,8 +26,6 @@ public class MainActivity extends Activity {
     ExpandableListView elv_itemType;
 
     private ExpandableAdapter mAdapter;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,9 +103,12 @@ public class MainActivity extends Activity {
     private void showUIDialog(int position){
         Intent intent = null;
         switch (position){
+            // 按钮样式对话框
             case 0:
                 intent = new Intent(this, ButtonsDialog.class);
                 break;
+            case 1:
+                intent = new Intent(this, SeekbarsDialog.class);
         }
         if (intent != null){
             startActivity(intent);

@@ -9,6 +9,8 @@
     <color name="red">#FF0000</color>
     <color name="green">#00FF00</color>
     <color name="gray">#cccccc</color>
+    <color name="yellow">#ffff00</color>
+    <color name="pink">#ff00cc</color>
 
     <color name="bg_expandable_item_normal">#ffffcc</color>
     <color name="bg_expandable_item_normal_child">#ccffcc</color>

@@ -28,3 +28,8 @@
 2、 添加格式化小数及判断字符串是否数字
 <br/>
 ![格式化小数](https://52code.tech/images/block/number_format.gif)
+
+# 2019/02/16
+1、添加拖动条seekbar样式
+<br/>
+![拖动条](https://52code.tech/images/block/seekbar.gif)
