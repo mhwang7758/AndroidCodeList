@@ -3,6 +3,4 @@
     <corners android:bottomRightRadius="5dp"
         android:topRightRadius="5dp"/>
     <solid android:color="@color/yellow"/>
-    <size android:height="50dp"
-          android:width="50dp"/>
 </shape>

@@ -8,16 +8,20 @@
             <layer-list>
                 <item android:drawable="@drawable/shape_progress_first_level"
                       android:top="3dp"
-                      android:bottom="3dp"/>
+                      android:bottom="3dp"
+                    android:width="50dp"/>
                 <item android:drawable="@drawable/shape_progress_second_level"
                       android:left="50dp"
                       android:top="2dp"
+                      android:width="50dp"
                       android:bottom="2dp"/>
                 <item android:drawable="@drawable/shape_progress_three_level"
                       android:left="100dp"
                       android:top="1dp"
+                      android:width="50dp"
                       android:bottom="1dp"/>
                 <item android:drawable="@drawable/shape_progress_four_level"
+                      android:width="50dp"
                       android:left="150dp"/>
             </layer-list>
         </clip>
